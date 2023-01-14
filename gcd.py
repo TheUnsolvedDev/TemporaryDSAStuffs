@@ -1,3 +1,6 @@
+import sys
+sys.stdout = open('output.txt','wt')
+
 def gcd(a, b):
     if a == 0:
         return b
@@ -11,4 +14,6 @@ def gcd(a, b):
         return gcd(a, b-a)
 
 if __name__ == "__main__":
-	print(gcd(10,13))
+    
+    for i in range(100):
+	    print(gcd(10,13))
